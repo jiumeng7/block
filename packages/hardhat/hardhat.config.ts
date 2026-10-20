@@ -17,8 +17,7 @@ import generateTsAbis from "./scripts/generateTsAbis";
 const providerApiKey = process.env.ALCHEMY_API_KEY || "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF";
 // If not set, it uses the hardhat account 0 private key.
 // You can generate a random account with `yarn generate` or `yarn account:import` to import your existing PK
-const deployerPrivateKey =
-  process.env.__RUNTIME_DEPLOYER_PRIVATE_KEY ?? "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80";
+const deployerPrivateKey = process.env.__RUNTIME_DEPLOYER_PRIVATE_KEY;
 // If not set, it uses our block explorers default API keys.
 const etherscanApiKey = process.env.ETHERSCAN_V2_API_KEY || "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW";
 
